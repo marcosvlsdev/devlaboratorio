@@ -64,7 +64,7 @@ main {
     height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: linear-gradient(170deg, #5D00D5 10%, #83009D 30%, transparent 70%); 
+    /* background: linear-gradient(170deg, #5D00D5 10%, #83009D 30%, transparent 70%);  */
 }
 
 main div {
