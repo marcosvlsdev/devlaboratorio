@@ -16,9 +16,10 @@ span {
 button {
     padding: 5px 25px;
     border-radius: 30px;
-    background-color: #65558F;
+    background-color: #B64AE8;
     color: white;
     font-size: 1em;
+    cursor: pointer;
 }
 
 header {
@@ -55,6 +56,11 @@ header nav a:hover {
     align-items: center;
 }
 
+.contato button, .titulo button {
+    border: none;
+    padding: 10px 30px;
+}
+
 .contato img {
     width: 20px;
     height: 20px;
@@ -85,6 +91,26 @@ main p {
     font-size: 2em;
 }
 
+section h2 {
+    font-size: 2.5em;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.celular img {
+    animation: downarrow .5s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes downarrow {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0.7em);
+    }
+}
+
 .orcamento {
     display: flex;
     flex-direction: row;
@@ -100,7 +126,7 @@ main p {
 }
 
 .orcamento button:hover{
-    background-color: #65558F;
+    background-color: #B64AE8;
     color: white;
 }
 
@@ -110,16 +136,11 @@ main p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
+    padding: 30px 0;
 }
 
 .titulo {
     text-align: center;
-}
-
-.servicos h2 {
-    font-size: 2.5em;
-    padding-bottom: 30px;
 }
 
 .cards-servicos {
@@ -175,4 +196,113 @@ main p {
 .avatar {
     width: 40px;
     height: 40px;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sobre div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobrenos h2 {
+    text-align: center;
+    font-size: 3.7em;
+    margin-bottom: 80px;
+}
+
+.sobrenos p {
+    font-size: 1.2em;
+    width: 50%;
+    margin: 30px 0;
+    line-height: 1.8em;
+}
+
+.sobrenos p a {
+    background-image: linear-gradient(to right, #9702D7, #D9008B,#EB1749,#F5B00A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 5px 5px 0 0;
+}
+
+.sobrenos p a:hover {
+    border-bottom: 2px solid #D9008B;
+}
+
+.redessociais ul{
+    list-style: none;
+}
+
+.redessociais li {
+    display: inline-block;
+    font-size: 4em;
+    margin: 5px 50px 0 0;
+}
+
+.redessociais a {
+    transition-duration: 0.3s;
+}
+
+.redessociais #github a:hover{
+    color: black;
+}
+
+.redessociais #instagram a:hover{
+    background-image: linear-gradient(135deg, #9702D7, #D9008B,#EB1749,#F5B00A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transition-duration: 1s;
+}
+
+.projetos  {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.trabalhos {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.projeto {
+    flex-basis: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.projeto .descricao {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 100%;
+    padding: 70px 10px;
+    color: white;
+}
+
+.projeto:hover .descricao{
+    display: block;
 }
