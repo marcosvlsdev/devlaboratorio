@@ -1,0 +1,76 @@
+@media (max-width:1300px) {
+    main {
+        grid-template-columns: auto;
+    }
+
+    main h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width:1050px) {
+    .sobre {
+        grid-template-columns: auto;
+    }
+
+    .cards-avaliacoes, .cards-servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .avaliacao {
+        width: 300px;
+    }
+}
+
+@media (max-width:1000px) {
+    header .menu {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        z-index: 1;
+        background-color: black;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    nav ul a {
+        padding: 10px;
+        margin-bottom: 10px;
+        display: block;
+        
+        color: white;
+    }
+    
+    nav input:checked ~ ul {
+        display: block;
+    } }
+
+    @media (max-width:768px) {
+        div, section {
+            align-items: center;
+        }
+        main h1 {
+            font-size: 2em;
+        }
+        
+        main p {
+            color: #8D8D8D;
+            font-size: 1em;
+        }
+
+        .orcamento {
+            flex-direction: column;
+        }
+
+        .orcamento button {
+            font-size: 1em;
+        }
+    }

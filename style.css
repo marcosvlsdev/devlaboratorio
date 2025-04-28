@@ -9,6 +9,11 @@
     text-decoration: none;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+}
+
 span {
     color: #B64AE8;
 }
@@ -20,6 +25,12 @@ button {
     color: white;
     font-size: 1em;
     cursor: pointer;
+}
+
+section h2 {
+    font-size: 2.5em;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 header {
@@ -36,9 +47,65 @@ header img {
     width: 70px;
 }
 
+.menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+}
+
+header input {
+    display: none;
+}
+
+.hamburguer {
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    position: relative;
+    top: 29px;
+    left: 15px;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer::before, .hamburguer::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    transition: .2s ease-in-out;
+    /* width: 100%;
+    heigh: 100% */
+}
+
+.hamburguer::before {
+    top: -10px;
+}
+
+.hamburguer::after {
+    bottom: -10px;
+}
+
+nav input:checked ~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+nav input:checked ~label .hamburguer::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+nav input:checked ~label .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
 header ul {
     display: flex;
-    gap: 100px;
+    gap: 60px;
+    align-items: center;
 }
 
 header a {
@@ -47,29 +114,28 @@ header a {
 }
 
 header nav a:hover {
-    border-bottom: 1px solid black;
+    text-decoration: underline;
 }
 
-.contato {
-    display: flex;
-    gap: 90px;
+.modo {
     align-items: center;
 }
 
-.contato button, .titulo button {
+header button, .titulo button {
     border: none;
     padding: 10px 30px;
 }
 
-.contato img {
+.modo img {
     width: 20px;
     height: 20px;
 }
 
 main {
-    height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px 0 0 20px;
     /* background: linear-gradient(170deg, #5D00D5 10%, #83009D 30%, transparent 70%);  */
 }
 
@@ -83,7 +149,7 @@ main div {
 }
 
 main h1 {
-    font-size: 5em;
+    font-size: 4em;
 }
 
 main p {
@@ -91,14 +157,8 @@ main p {
     font-size: 2em;
 }
 
-section h2 {
-    font-size: 2.5em;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
 .celular img {
-    animation: downarrow .5s infinite alternate ease-in-out;
+    animation: downarrow .7s infinite alternate ease-in-out;
 }
 
 @-webkit-keyframes downarrow {
@@ -131,7 +191,6 @@ section h2 {
 }
 
 .servicos {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,10 +202,12 @@ section h2 {
     text-align: center;
 }
 
-.cards-servicos {
+.cards-servicos, .cards-avaliacoes {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    gap: 30px;
+    padding: 30px;
 }
 
 .card {
@@ -165,12 +226,6 @@ section h2 {
 .card img {
     height: 50px;
     width: 50px;
-}
-
-.cards-avaliacoes {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 
 .avaliacao {
@@ -238,8 +293,14 @@ section h2 {
     border-bottom: 2px solid #D9008B;
 }
 
+.redessociais {
+    width: 50%;
+}
+
 .redessociais ul{
     list-style: none;
+    width: 100%;
+    
 }
 
 .redessociais li {
@@ -266,7 +327,6 @@ section h2 {
 }
 
 .projetos  {
-    height: 50vh;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -279,6 +339,8 @@ section h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 20px;
+    gap: 30px;
+    align-items: center;
 }
 
 .projeto {
@@ -305,4 +367,17 @@ section h2 {
 
 .projeto:hover .descricao{
     display: block;
+}
+
+body.modo-escuro {
+    background-color: rgb(163, 157, 157);
+    color: white;
+}
+
+body.modo-escuro .card, body.modo-escuro .avaliacao{
+    background-color: gray;
+}
+
+body.modo-escuro a {
+    color: white;
 }
