@@ -34,19 +34,18 @@
         top: 100px;
         right: 0;
         z-index: 1;
-        background-color: black;
+        backdrop-filter: blur(10px);
         width: 100%;
         padding: 20px;
         text-align: center;
-        gap: 20px;
     }
     
     nav ul a {
         padding: 10px;
         margin-bottom: 10px;
         display: block;
-        
-        color: white;
+        font-weight: 500;
+        color: black;
     }
     
     nav input:checked ~ ul {
@@ -54,6 +53,10 @@
     } }
 
     @media (max-width:768px) {
+        main div {
+            gap: 20px;
+        }
+
         div, section {
             align-items: center;
         }

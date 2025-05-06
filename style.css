@@ -12,16 +12,17 @@
 section {
     display: flex;
     flex-direction: column;
+    padding: 30px 0;
 }
 
 span {
-    color: #B64AE8;
+    color: #7403DD;
 }
 
 button {
     padding: 5px 25px;
     border-radius: 30px;
-    background-color: #B64AE8;
+    background-color: #7403DD;
     color: white;
     font-size: 1em;
     cursor: pointer;
@@ -45,6 +46,10 @@ header {
 
 header img {
     width: 70px;
+}
+
+nav {
+    padding-right: 50px;
 }
 
 .menu {
@@ -135,7 +140,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    padding: 20px 0 0 20px;
+    padding: 20px;
     /* background: linear-gradient(170deg, #5D00D5 10%, #83009D 30%, transparent 70%);  */
 }
 
@@ -186,7 +191,7 @@ main p {
 }
 
 .orcamento button:hover{
-    background-color: #B64AE8;
+    background-color: #7403DD;
     color: white;
 }
 
@@ -265,6 +270,12 @@ main p {
     align-items: center;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .sobrenos h2 {
     text-align: center;
     font-size: 3.7em;
@@ -274,7 +285,6 @@ main p {
 .sobrenos p {
     font-size: 1.2em;
     width: 50%;
-    margin: 30px 0;
     line-height: 1.8em;
 }
 
@@ -297,16 +307,19 @@ main p {
     width: 50%;
 }
 
+.redessociais p {
+    align-self: flex-start;
+}
+
 .redessociais ul{
     list-style: none;
     width: 100%;
-    
+    display: flex;
+    gap: 30px;
 }
 
 .redessociais li {
-    display: inline-block;
-    font-size: 4em;
-    margin: 5px 50px 0 0;
+    font-size: 2.5em;
 }
 
 .redessociais a {
@@ -334,18 +347,19 @@ main p {
 }
 
 .trabalhos {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0px 20px;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
+    align-content: flex-start;
 }
 
 .projeto {
-    flex-basis: 300px;
-    height: 300px;
+    flex-basis: 400px;
+    height: 550px;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
@@ -353,12 +367,16 @@ main p {
     padding: 10px;
 }
 
+.projeto img {
+    object-fit: cover;
+}
+
 .projeto .descricao {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(0, 0, 0, 0.555);
     width: 100%;
     height: 100%;
     padding: 70px 10px;
