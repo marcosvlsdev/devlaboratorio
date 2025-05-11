@@ -44,7 +44,7 @@ header {
     position: fixed; */
 }
 
-header img {
+.logo img {
     width: 70px;
 }
 
@@ -113,12 +113,12 @@ header ul {
     align-items: center;
 }
 
-header a {
+header a, footer a {
     text-decoration: none;
     color: black;
 }
 
-header nav a:hover {
+header nav a:hover, footer a:hover {
     text-decoration: underline;
 }
 
@@ -388,14 +388,35 @@ main p {
 }
 
 body.modo-escuro {
-    background-color: rgb(163, 157, 157);
+    background-color: #282828;
     color: white;
 }
 
 body.modo-escuro .card, body.modo-escuro .avaliacao{
-    background-color: gray;
+    background-color: #3D3D3D;
 }
 
 body.modo-escuro a {
     color: white;
+}
+
+footer {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+footer a, footer i {
+    
+    font-size: 1.2em;
+}
+
+footer h3 {
+    font-size: 1.5em;
+}
+
+.contato ul {
+    display: flex;
+    gap: 10px;
 }
