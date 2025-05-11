@@ -387,19 +387,6 @@ main p {
     display: block;
 }
 
-body.modo-escuro {
-    background-color: #282828;
-    color: white;
-}
-
-body.modo-escuro .card, body.modo-escuro .avaliacao{
-    background-color: #3D3D3D;
-}
-
-body.modo-escuro a {
-    color: white;
-}
-
 footer {
     background-color: #e0e0e0;
     display: flex;
@@ -420,3 +407,21 @@ footer h3 {
     display: flex;
     gap: 10px;
 }
+
+body.modo-escuro {
+    background-color: #282828;
+    color: white;
+}
+
+body.modo-escuro .card, body.modo-escuro .avaliacao{
+    background-color: #3D3D3D;
+}
+
+body.modo-escuro a {
+    color: white;
+}
+
+body.modo-escuro footer {
+    background-color: #3D3D3D;
+}
+

@@ -76,4 +76,10 @@
         .orcamento button {
             font-size: 1em;
         }
+
+        footer {
+            flex-direction: column;
+            gap: 30px;
+            padding-left: 20px;
+        }
     }
