@@ -44,7 +44,7 @@ header {
     position: fixed; */
 }
 
-.logo img {
+.logo, .logo-footer {
     width: 70px;
 }
 
@@ -132,9 +132,10 @@ header button, .titulo button {
 }
 
 .modo img {
-    width: 20px;
-    height: 20px;
-}
+    width: 60px;
+    height: 70px;
+    cursor: pointer;
+    }
 
 main {
     display: grid;
