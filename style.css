@@ -275,6 +275,7 @@ main p {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 50px;
 }
 
 .sobrenos h2 {
@@ -285,8 +286,8 @@ main p {
 
 .sobrenos p {
     font-size: 1.2em;
-    width: 50%;
     line-height: 1.8em;
+    margin: auto;
 }
 
 .sobrenos p a {
@@ -304,10 +305,6 @@ main p {
     border-bottom: 2px solid #D9008B;
 }
 
-.redessociais {
-    width: 50%;
-}
-
 .redessociais p {
     align-self: flex-start;
 }
@@ -316,6 +313,7 @@ main p {
     list-style: none;
     width: 100%;
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 

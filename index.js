@@ -14,7 +14,7 @@ alterarModo.addEventListener("click", () => {
         imagemLogo.setAttribute("src", "img/lab-removebg-preview.png")
         imagemLogoFooter.setAttribute("src", "img/lab-removebg-preview.png")
     } else {
-        imagemModo.setAttribute("src", "img/lua1.png")
+        imagemModo.setAttribute("src", "img/lua2.png")
         imagemLogo.setAttribute("src", "img/lab-claro.png")
         imagemLogoFooter.setAttribute("src", "img/lab-claro.png")
     }
