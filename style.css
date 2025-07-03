@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
 
 * {
     padding: 0;
@@ -6,6 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -17,6 +18,7 @@ section {
 
 span {
     color: #7403DD;
+    font-weight: 700;
 }
 
 button {
@@ -56,8 +58,9 @@ header {
     font-weight: 700;
 }
 
-.logo, .logo-footer {
-    width: 70px;
+img.logo, img.logo-footer{
+    width: 65px;
+    height: 65px;
 }
 
 nav {
@@ -165,17 +168,20 @@ main div {
     text-align: center;
 }
 
-main h1 {
+main h1, h2 {
     font-size: 4em;
+    font-weight: 700;
 }
 
 main p {
-    color: #575757;
+    font-style: italic;
     font-size: 2em;
+    font-weight: 500;
 }
 
 .celular img {
     animation: downarrow .7s infinite alternate ease-in-out;
+    
 }
 
 @-webkit-keyframes downarrow {
@@ -325,21 +331,16 @@ main p {
     font-size: 2em;
 }
 
-.redessociais a {
-    transition-duration: 0.3s;
-}
-
-.redessociais #github a:hover{
+.redessociais #github a{
     color: black;
 }
 
-.redessociais #instagram a:hover{
+.redessociais #instagram a{
     background-image: linear-gradient(135deg, #9702D7, #D9008B,#EB1749,#F5B00A);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    transition-duration: 1s;
 }
 
 .projetos  {
@@ -388,7 +389,7 @@ main p {
 
 .projeto .descricao .texto {
     position: absolute;
-    bottom: 5px;
+    bottom: 3px;
     left: 5px;
     color: #7403DD;
     font-size: 0.9em;
@@ -406,8 +407,11 @@ footer {
 }
 
 footer a, footer i {
-    padding: 5px;
     font-size: 1.2em;
+}
+
+footer i {
+    padding-right: 5px;
 }
 
 footer h3 {
